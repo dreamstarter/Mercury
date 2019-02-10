@@ -1,0 +1,50 @@
+<div class="wrapper">
+  <div class="sidebar" data-color="white" data-active-color="danger">
+    <div class="logo">
+      <a href="#" class="simple-text logo-mini">
+        <div class="logo-image-small">
+          <!-- <img src="<%= asset_path('/images/logo-small.png') %>" class: "img-fluid"> -->
+        </div>
+      </a>
+      <a href="#" class="simple-text logo-normal">
+        Dreamstarter<br>Studio
+        <!-- <div class="logo-image-big">
+          <img src="../assets/img/logo-big.png">
+        </div> -->
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+        <li class="active ">
+          <%= link_to root_path do %>
+            <i class="fas fa-archway"></i>
+            <p>Dashboard</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to main_notifications_path do %>
+            <i class="fas fa-bell"></i>
+            <p>Notifications</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to main_user_path do %>
+            <i class="far fa-user"></i>
+            <p>User Profile</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to main_tables_path do %>
+            <i class="fas fa-table"></i>
+            <p>Table List</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to main_typography_path do %>
+            <i class="fas fa-paragraph"></i>
+            <p>Typography</p>
+          <% end %>
+        </li> 
+      </ul>
+    </div>
+  </div>
