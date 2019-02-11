@@ -124,8 +124,6 @@
   padding: 16px 0;
   text-align: center;
   border-radius: .25em;
-  -webkit-transition: background 0.2s;
-  -moz-transition: background 0.2s;
   transition: background 0.2s;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -159,6 +157,12 @@
   padding: 20px 0 0;
   font-size: 12px;
   margin: 0;
+}
+
+.demo-icons ul p::-moz-selection,
+.demo-icons ul em::-moz-selection {
+  background: #608CEE;
+  color: #efefef;
 }
 
 .demo-icons ul p::selection,

@@ -105,7 +105,7 @@
   text-decoration: underline;
 }
 
-.demo-icons .nc-icon {
+.demo-icons .fas {
   font-size: 34px;
 }
 
@@ -2649,7 +2649,10 @@ body {
 
 .main {
   position: relative;
-  background: #FFFFFF;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ca94f+0,ffffff+100 */
+  background: #9ca94f; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9ca94f 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ca94f', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 /* Animations */

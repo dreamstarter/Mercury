@@ -1,21 +1,4 @@
 /*!
-
- =========================================================
- * Paper Dashboard 2 - v2.0.0
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/paper-dashboard-2
- * Copyright 2018 Creative Tim (http://www.creative-tim.com)
-
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
-/*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 
@@ -2466,7 +2449,10 @@ body {
 
 .main {
   position: relative;
-  background: #FFFFFF;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ca94f+0,ffffff+100 */
+  background: #9ca94f; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9ca94f 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ca94f', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 /* Animations */
@@ -2829,22 +2815,22 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 
 .navbar .form-group.no-border .form-control,
 .navbar .input-group.no-border .form-control {
-  color: #66615B;
+  color: #f4f3ef;
 }
 
 .navbar .form-group.no-border .form-control::-moz-placeholder,
 .navbar .input-group.no-border .form-control::-moz-placeholder {
-  color: #66615B;
+  color: #f4f3ef;
 }
 
 .navbar .form-group.no-border .form-control:-ms-input-placeholder,
 .navbar .input-group.no-border .form-control:-ms-input-placeholder {
-  color: #66615B;
+  color: #f4f3ef;
 }
 
 .navbar .form-group.no-border .form-control::-webkit-input-placeholder,
 .navbar .input-group.no-border .form-control::-webkit-input-placeholder {
-  color: #66615B;
+  color: #f4f3ef;
 }
 
 .navbar p {
@@ -2991,13 +2977,13 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .navbar.navbar-transparent {
-  background-color: transparent !important;
+  background-color: #4f9ebd !important;
   box-shadow: none;
   border-bottom: 1px solid #ddd;
 }
 
 .navbar.navbar-transparent a:not(.dropdown-item):not(.btn) {
-  color: #66615B;
+  color: #f4f3ef;
 }
 
 .navbar.navbar-transparent a:not(.dropdown-item):not(.btn).disabled {
@@ -3010,7 +2996,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .navbar.navbar-transparent .nav-item .nav-link:not(.btn) {
-  color: #66615B;
+  color: #f4f3ef;
 }
 
 .navbar.navbar-transparent .nav-item.active .nav-link:not(.btn),
@@ -3743,8 +3729,12 @@ License - nucleoapp.com/license/
 
 @font-face {
   font-family: 'nucleo-icons';
-  src: url('<%= asset_path('/fonts/nucleo-icons.eot') %>');
-  src: url('<%= asset_path('/fonts/nucleo-icons.eot') %>') format("embedded-opentype"), url('<%= asset_path('/fonts/nucleo-icons.woff2') %>') format("woff2"), url('<%= asset_path('/fonts/nucleo-icons.woff') %>') format("woff"), url('<%= asset_path('/fonts/nucleo-icons.ttf') %>') format("truetype"), url('<%= asset_path('/fonts/nucleo-icons.svg') %>') format("svg");
+  src: url('/assets/fonts/nucleo-icons.eot');
+  src: url('/assets/fonts/nucleo-icons.eot') format("embedded-opentype"), 
+  url('/assets/fonts/nucleo-icons.woff2') format("woff2"), 
+  url('/assets/fonts/nucleo-icons.woff') format("woff"), 
+  url('/assets/fonts/nucleo-icons.ttf') format("truetype"), 
+  url('/assets/fonts/nucleo-icons.svg') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -4508,6 +4498,10 @@ License - nucleoapp.com/license/
   width: 260px;
   z-index: 4;
   padding-bottom: 100px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d9eaf2+0,ffffff+100 */
+  background: #d9eaf2; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #d9eaf2 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9eaf2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 .sidebar .sidebar-wrapper .dropdown .dropdown-backdrop,
@@ -4537,6 +4531,7 @@ License - nucleoapp.com/license/
   width: 61px;
   float: left;
   overflow: hidden;
+  background-color: #d9eaf2 !important;
 }
 
 .sidebar .logo-tim img,
@@ -4549,6 +4544,10 @@ License - nucleoapp.com/license/
 .off-canvas-sidebar .nav {
   margin-top: 20px;
   display: block;
+}
+
+.sidebar .nav li {
+  color: #333 !important;
 }
 
 .sidebar .nav .caret,
@@ -4762,7 +4761,7 @@ License - nucleoapp.com/license/
 .off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"] i,
 .off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"]~div>ul>li .sidebar-mini-icon,
 .off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"]~div>ul>li>a {
-  color: #66615B;
+  color: #111111;
   opacity: .7;
 }
 
@@ -4775,7 +4774,7 @@ License - nucleoapp.com/license/
 
 .sidebar[data-color="white"] .logo .simple-text,
 .off-canvas-sidebar[data-color="white"] .logo .simple-text {
-  color: #66615B;
+  color: #111111;
 }
 
 .sidebar[data-color="white"] .logo:after,
@@ -4907,6 +4906,10 @@ License - nucleoapp.com/license/
   width: calc(100% - 260px);
   background-color: #f4f3ef;
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ca94f+0,ffffff+100 */
+  background: #9ca94f; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9ca94f 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ca94f', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 .main-panel>.content {
